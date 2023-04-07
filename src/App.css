@@ -1,68 +1,77 @@
 body {
-    background-color: #706e6e;
-    color: #fff;
+  background-color: #706e6e;
+  color: #fff;
 }
 
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .taskBg {
-    background-color: #a09e9e;
-    border-radius: 6px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    padding: 10px 150px 10px 15px;
-    text-align: left;
-    font-size: 22px;
-    position: relative;
+  background: rgb(11, 158, 138);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 158, 138, 1) 0%,
+    rgba(204, 146, 102, 1) 100%
+  );
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px 150px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
 }
 
 .taskBg div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .taskNumber {
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 50%;
-    width: 26px;
-    height: 26px;
-    display: flex;
-    text-align: center;
-    font-size: 14px;
-    margin-right: 8px;
-    align-items: center;
-    justify-content: center;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .taskBg .taskText {
-    flex: 1;
-    color: #fff;
+  flex: 1;
+  color: #fff;
 }
 
-.taskBg .done .taskText {
-    text-decoration: line-through;
-    opacity: 0.3;
+.taskBg .done {
+  text-decoration: line-through;
+  opacity: 0.4;
 }
 
 .taskBg .iconsWrap {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15px;
-    width: auto;
-    display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
 }
 
 .taskBg .iconsWrap span {
-    display: inline-block;
-    margin: 0px 10px 0px 10px;
-    cursor: pointer;
-    color: #00ff89;
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  color: #00ff89;
 }
 
 .taskBg .iconsWrap span:hover {
-    color: yellow;
+  color: yellow;
+}
+
+.taskBg:first-of-type {
+  margin-top: 30px;
 }
