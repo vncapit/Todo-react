@@ -7,6 +7,11 @@ body {
   text-align: center;
 }
 
+.title {
+  background-color: #f5f0e4;
+  padding: 10px 0;
+}
+
 .taskBg {
   background: rgb(11, 158, 138);
   background: linear-gradient(
